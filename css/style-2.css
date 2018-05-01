@@ -1,0 +1,520 @@
+*{
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    outline: none;
+    border: none;
+    -webkit-box-sizing: border-box;
+}
+*:before,
+*:after{
+    -webkit-box-sizing: border-box;
+}
+.clearfix {
+    *zoom: 1;
+}
+html{
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 12px;
+}
+body{
+    background: url('brushed_alu.png');
+}
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.clearfix:after {
+    clear: both;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    height: 60px;
+    border-bottom: 2px solid #85cde7;
+}
+.header-left,
+.header-right{
+    position: relative;
+    color: #000;
+    float: left;
+    margin-top: 8px;
+}
+.header-left{
+    width: 30%;
+}
+.header-right label{
+    position: absolute;
+    top: -3.7em;
+    right: 0;
+    cursor: pointer;
+}
+.header-right span{
+    position: relative;
+    width: 2em;
+    height: 2em;
+    background: rgba(255,255,255,.3);
+    -webkit-transition: all .3s ease;
+}
+.header-right span:hover{
+    background: rgba(255,255,255,.6);
+}
+.header-right span:before,
+.header-right span:after{
+    content: '';
+    position: absolute;
+    width: 2em;
+    height: .5em;
+    top: 4px;
+    left: 0;
+    background: black;
+}
+.header-right span:after{
+    top: 14px;
+}
+.header-right{
+    width: 70%;
+    text-align: right;
+}
+#open{
+    display: none;
+}
+h1{
+    font-weight: 300;
+    line-height: 40px;
+}
+a{
+    text-decoration: none;
+    color: #8d8484;
+}
+nav>a{
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 40px;
+    padding: 0 2em;
+    -webkit-transition: all .3s ease;
+}
+nav>a:hover{
+    background: rgba(255,255,255,.9);
+    color: black;
+}
+.hidden-desktop{
+    display: none;
+}
+section{
+    width: 100%;
+    height: 330px;
+    /*background-image: -webkit-linear-gradient(#80059E 0%, #550486 100%);*/
+}
+.section-left,.section-center,
+.section-right{
+    float: left;
+}
+.section-center{
+    width: 100%;
+    padding: 3em 0;
+    margin: 10px 10px 10px 10px;
+    min-height: 1px;
+}
+
+.section-center , h2
+{
+    font-size: 19px;
+    text-align: center;
+}
+ .btn-more
+ {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 100%;
+   transition: translateY(-50%);
+   position: relative;
+   text-align:center;
+  /*the same margin which is every button have, it is for small screen, and if you have many buttons.*/
+  margin-left:-20px;
+  marin-right:-20px;
+ }
+.section-center ,.well, .btn-more  {
+    
+    list-style: none;
+text-align: center;
+margin-left: 10px !important;
+padding: 10px 10px 10px 10px;
+margin-left: 14px;
+margin-right: 14px;
+transition: translateY(-50%);
+}
+.btn-more a{
+    
+    display: block;
+    margin: 10px auto 10px auto;
+}
+
+
+
+.btn-green
+{float: left;
+width: 150px;
+height: 30px;
+line-height: 30px;
+text-align: center;
+background: #a5c63b;
+color: #ffffff;
+font-size: 12px;
+text-transform: uppercase;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 0px;}
+
+.btn-purple
+{float: left;
+width: 100px;
+height: 30px;
+line-height: 30px;
+text-align: center;
+background: #99417b;
+color: #ffffff;
+font-size: 12px;
+text-transform: uppercase;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 0px;}
+.section-right{
+    width: 10%;
+}
+.section-left{
+    width: 10%;
+}
+
+.section-title,
+.section-tagline{
+    color: white;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: all .4s ease;
+}
+.section-title{
+    font-size: 4em;
+    margin-bottom: .3em;
+    text-shadow: 0 3px 0px black,
+    0 4px 0px rgba(150,150,150,.5);
+}
+.section-tagline{
+    font-size: 1em;
+}
+
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color:#f2f3f5 !important;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    font-size: 13px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.learn-more{
+    display: table;
+    margin: 3em auto 0;
+    padding: 1em 6em;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,.8);
+    background: #EAAF00;
+    background-image: -webkit-linear-gradient(#EAAF00 0%, #D78100 100%);
+    font-size: 1.2em;
+}
+.learn-more:hover{
+    background: #EAAF00;
+}
+.learn-more:active{
+    box-shadow: inset 0 2px 0 rgba(0,0,0,.8);
+}
+
+footer {
+    float: left;
+    width: 100%;
+    background: #24324a;
+}
+
+.column1{
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 23.1%;
+}
+.widget {
+    float: left;
+    width: 100%;
+}
+.about_widget {
+    float: left;
+    width: 100%;
+}
+.about_widget > span {
+    width: 100%;
+    float: left;
+    font-family: Open Sans;
+    font-size: 13px;
+    color: #fff;
+    line-height: 30px;
+}
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.app-button{
+    background-color: #01AAAD;
+    width: 150px;
+    margin:0 20px;
+    display:inline-block;
+    line-height: 40px;
+    border-radius: 4px;
+}
+.row{
+  text-align:center;
+  /*the same margin which is every button have, it is for small screen, and if you have many buttons.*/
+  margin-left:-20px;
+  marin-right:-20px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.bottom-line {
+    float: left;
+    width: 100%;
+    text-align: center;
+    background: #3d3b40;
+    padding: 24px 0;
+    color: #fff;
+    display: block;
+    border-top: 2px solid #f3f1f6; 
+}
+.pb-5, .py-5 {
+    padding-bottom: 3rem !important;
+}
+.pt-5, .py-5 {
+    padding-top: 3rem !important;
+}
+
+.btn-primary.btn-outline:hover{
+    color: #fff;
+}
+
+.btn 
+{
+    display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.42857143;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+-ms-touch-action: manipulation;
+touch-action: manipulation;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+background-image: none;
+border-radius: 4px;
+    color: black;
+    border: 2px solid #aac43d;
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    .box{
+        width: 49%;
+        margin-bottom: 5%;
+    }
+
+    ul li:nth-child(3) .box{
+        clear: both;
+    }
+
+    ul li:nth-child(2n) .box{
+        margin-right: 0;
+        clear: right;
+    }
+}
+
+/* Small monitor */
+@media (max-width: 979px){
+    nav>a{
+        padding: 0 1.5em;
+    }
+    .section-left,
+    .section-right{
+        width: 100%;
+    }
+    .section-left{
+        text-align: center;
+    }
+    .section-right{
+        padding: 0 0 2em;
+    }
+    .section-title{
+        font-size: 4em;
+        margin-bottom: .2em;
+    }
+    .section-tagline{
+        font-size: 1.3em;
+    }
+    .learn-more{
+        margin: 0 auto;
+    }
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .container{
+        width: 95%;
+    }
+    nav>a{
+        padding: 0 2em;
+    }
+    h1{
+        padding: .5em 0;
+    }
+    .header-left,
+    .header-right{
+        width: 100%;
+        text-align: center;
+    }
+    .section-left,
+    .section-right{
+        width: 100%;
+    }
+    .section-left{
+        text-align: center;
+        padding: 2em 0;
+    }
+    .section-right{
+        padding: 1em 0 2em;
+    }
+    .section-title{
+        font-size: 3em;
+        margin-bottom: .2em;
+    }
+    .section-tagline{
+        font-size: 1.3em;
+    }
+    .learn-more{
+        margin: 0 auto;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    body{
+        padding: 0 .5em;
+    }
+    .container{
+        width: 90%;
+    }
+    nav{
+        height: 0;
+        overflow: hidden;
+        -webkit-transition: all .3s ease;
+    }
+    input[type="checkbox"]:checked + nav{
+        height: 205px;
+    }
+    nav>a{
+        padding: 0 1em;
+        display: block;
+        border-bottom: solid 1px rgba(255,255,255,.1);
+    }
+    h1{
+        padding: .5em 0;
+    }
+    .header-left,
+    .header-right{
+        width: 100%;
+        text-align: center;
+    }
+    .section-left,
+    .section-right{
+        width: 100%;
+    }
+    .section-left{
+        text-align: center;
+        padding: 1em 0;
+    }
+    .section-right{
+        text-align: center;
+        padding: 1em 0 2em;
+    }
+    .section-title{
+        font-size: 2.4em;
+        margin-bottom: 0;
+    }
+    .section-tagline{
+        font-size: 1em;
+    }
+    .learn-more{
+        display: table;
+        margin: 0 auto;
+    }
+    .hidden-desktop{
+        display: block;
+    }
+}
+
